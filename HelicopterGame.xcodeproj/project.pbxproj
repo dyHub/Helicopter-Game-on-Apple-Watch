@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56DE27231C28AE2000BC6C1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE27221C28AE2000BC6C1D /* main.m */; };
+		56DE27261C28AE2000BC6C1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE27251C28AE2000BC6C1D /* AppDelegate.m */; };
+		56DE27291C28AE2000BC6C1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE27281C28AE2000BC6C1D /* ViewController.m */; };
+		56DE272C1C28AE2000BC6C1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56DE272A1C28AE2000BC6C1D /* Main.storyboard */; };
+		56DE272E1C28AE2000BC6C1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56DE272D1C28AE2000BC6C1D /* Assets.xcassets */; };
+		56DE27311C28AE2000BC6C1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56DE272F1C28AE2000BC6C1D /* LaunchScreen.storyboard */; };
+		56DE273C1C28AE2100BC6C1D /* HelicopterGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE273B1C28AE2100BC6C1D /* HelicopterGameTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56DE27381C28AE2100BC6C1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56DE27161C28AE2000BC6C1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56DE271D1C28AE2000BC6C1D;
+			remoteInfo = HelicopterGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		56DE271E1C28AE2000BC6C1D /* HelicopterGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelicopterGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56DE27221C28AE2000BC6C1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		56DE27241C28AE2000BC6C1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		56DE27251C28AE2000BC6C1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		56DE27271C28AE2000BC6C1D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		56DE27281C28AE2000BC6C1D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		56DE272B1C28AE2000BC6C1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56DE272D1C28AE2000BC6C1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56DE27301C28AE2000BC6C1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		56DE27321C28AE2000BC6C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56DE27371C28AE2100BC6C1D /* HelicopterGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelicopterGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56DE273B1C28AE2100BC6C1D /* HelicopterGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelicopterGameTests.m; sourceTree = "<group>"; };
+		56DE273D1C28AE2100BC6C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56DE271B1C28AE2000BC6C1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56DE27341C28AE2100BC6C1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56DE27151C28AE2000BC6C1D = {
+			isa = PBXGroup;
+			children = (
+				56DE27201C28AE2000BC6C1D /* HelicopterGame */,
+				56DE273A1C28AE2100BC6C1D /* HelicopterGameTests */,
+				56DE271F1C28AE2000BC6C1D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		56DE271F1C28AE2000BC6C1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56DE271E1C28AE2000BC6C1D /* HelicopterGame.app */,
+				56DE27371C28AE2100BC6C1D /* HelicopterGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56DE27201C28AE2000BC6C1D /* HelicopterGame */ = {
+			isa = PBXGroup;
+			children = (
+				56DE27241C28AE2000BC6C1D /* AppDelegate.h */,
+				56DE27251C28AE2000BC6C1D /* AppDelegate.m */,
+				56DE27271C28AE2000BC6C1D /* ViewController.h */,
+				56DE27281C28AE2000BC6C1D /* ViewController.m */,
+				56DE272A1C28AE2000BC6C1D /* Main.storyboard */,
+				56DE272D1C28AE2000BC6C1D /* Assets.xcassets */,
+				56DE272F1C28AE2000BC6C1D /* LaunchScreen.storyboard */,
+				56DE27321C28AE2000BC6C1D /* Info.plist */,
+				56DE27211C28AE2000BC6C1D /* Supporting Files */,
+			);
+			path = HelicopterGame;
+			sourceTree = "<group>";
+		};
+		56DE27211C28AE2000BC6C1D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				56DE27221C28AE2000BC6C1D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56DE273A1C28AE2100BC6C1D /* HelicopterGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				56DE273B1C28AE2100BC6C1D /* HelicopterGameTests.m */,
+				56DE273D1C28AE2100BC6C1D /* Info.plist */,
+			);
+			path = HelicopterGameTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56DE271D1C28AE2000BC6C1D /* HelicopterGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56DE27401C28AE2100BC6C1D /* Build configuration list for PBXNativeTarget "HelicopterGame" */;
+			buildPhases = (
+				56DE271A1C28AE2000BC6C1D /* Sources */,
+				56DE271B1C28AE2000BC6C1D /* Frameworks */,
+				56DE271C1C28AE2000BC6C1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelicopterGame;
+			productName = HelicopterGame;
+			productReference = 56DE271E1C28AE2000BC6C1D /* HelicopterGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56DE27361C28AE2100BC6C1D /* HelicopterGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56DE27431C28AE2100BC6C1D /* Build configuration list for PBXNativeTarget "HelicopterGameTests" */;
+			buildPhases = (
+				56DE27331C28AE2100BC6C1D /* Sources */,
+				56DE27341C28AE2100BC6C1D /* Frameworks */,
+				56DE27351C28AE2100BC6C1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56DE27391C28AE2100BC6C1D /* PBXTargetDependency */,
+			);
+			name = HelicopterGameTests;
+			productName = HelicopterGameTests;
+			productReference = 56DE27371C28AE2100BC6C1D /* HelicopterGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56DE27161C28AE2000BC6C1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Yuhan Dai";
+				TargetAttributes = {
+					56DE271D1C28AE2000BC6C1D = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 282STFRV99;
+					};
+					56DE27361C28AE2100BC6C1D = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 282STFRV99;
+						TestTargetID = 56DE271D1C28AE2000BC6C1D;
+					};
+				};
+			};
+			buildConfigurationList = 56DE27191C28AE2000BC6C1D /* Build configuration list for PBXProject "HelicopterGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56DE27151C28AE2000BC6C1D;
+			productRefGroup = 56DE271F1C28AE2000BC6C1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56DE271D1C28AE2000BC6C1D /* HelicopterGame */,
+				56DE27361C28AE2100BC6C1D /* HelicopterGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56DE271C1C28AE2000BC6C1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56DE27311C28AE2000BC6C1D /* LaunchScreen.storyboard in Resources */,
+				56DE272E1C28AE2000BC6C1D /* Assets.xcassets in Resources */,
+				56DE272C1C28AE2000BC6C1D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56DE27351C28AE2100BC6C1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56DE271A1C28AE2000BC6C1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56DE27291C28AE2000BC6C1D /* ViewController.m in Sources */,
+				56DE27261C28AE2000BC6C1D /* AppDelegate.m in Sources */,
+				56DE27231C28AE2000BC6C1D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56DE27331C28AE2100BC6C1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56DE273C1C28AE2100BC6C1D /* HelicopterGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56DE27391C28AE2100BC6C1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56DE271D1C28AE2000BC6C1D /* HelicopterGame */;
+			targetProxy = 56DE27381C28AE2100BC6C1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		56DE272A1C28AE2000BC6C1D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56DE272B1C28AE2000BC6C1D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		56DE272F1C28AE2000BC6C1D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56DE27301C28AE2000BC6C1D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56DE273E1C28AE2100BC6C1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56DE273F1C28AE2100BC6C1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56DE27411C28AE2100BC6C1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HelicopterGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = A.HelicopterGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		56DE27421C28AE2100BC6C1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HelicopterGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = A.HelicopterGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		56DE27441C28AE2100BC6C1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HelicopterGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = A.HelicopterGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelicopterGame.app/HelicopterGame";
+			};
+			name = Debug;
+		};
+		56DE27451C28AE2100BC6C1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HelicopterGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = A.HelicopterGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelicopterGame.app/HelicopterGame";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56DE27191C28AE2000BC6C1D /* Build configuration list for PBXProject "HelicopterGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56DE273E1C28AE2100BC6C1D /* Debug */,
+				56DE273F1C28AE2100BC6C1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56DE27401C28AE2100BC6C1D /* Build configuration list for PBXNativeTarget "HelicopterGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56DE27411C28AE2100BC6C1D /* Debug */,
+				56DE27421C28AE2100BC6C1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		56DE27431C28AE2100BC6C1D /* Build configuration list for PBXNativeTarget "HelicopterGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56DE27441C28AE2100BC6C1D /* Debug */,
+				56DE27451C28AE2100BC6C1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56DE27161C28AE2000BC6C1D /* Project object */;
+}
