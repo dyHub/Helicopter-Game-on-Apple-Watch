@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "56DE271D1C28AE2000BC6C1D"
-               BuildableName = "HelicopterGame.app"
+               BuildableName = "HelicopterGameTest.app"
                BlueprintName = "HelicopterGame"
                ReferencedContainer = "container:HelicopterGame.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "56DE27361C28AE2100BC6C1D"
-               BuildableName = "HelicopterGameTests.xctest"
+               BuildableName = "HelicopterGame.xctest"
                BlueprintName = "HelicopterGameTests"
                ReferencedContainer = "container:HelicopterGame.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "56DE271D1C28AE2000BC6C1D"
-            BuildableName = "HelicopterGame.app"
+            BuildableName = "HelicopterGameTest.app"
             BlueprintName = "HelicopterGame"
             ReferencedContainer = "container:HelicopterGame.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "56DE271D1C28AE2000BC6C1D"
-            BuildableName = "HelicopterGame.app"
+            BuildableName = "HelicopterGameTest.app"
             BlueprintName = "HelicopterGame"
             ReferencedContainer = "container:HelicopterGame.xcodeproj">
          </BuildableReference>
@@ -85,7 +85,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "56DE271D1C28AE2000BC6C1D"
-            BuildableName = "HelicopterGame.app"
+            BuildableName = "HelicopterGameTest.app"
             BlueprintName = "HelicopterGame"
             ReferencedContainer = "container:HelicopterGame.xcodeproj">
          </BuildableReference>

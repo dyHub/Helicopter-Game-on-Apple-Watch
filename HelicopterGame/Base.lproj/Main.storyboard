@@ -1,25 +1,151 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="Eeh-wy-p3L">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HelicopterImage" translatesAutoresizingMaskIntoConstraints="NO" id="43n-Uc-1wI">
+                                <rect key="frame" x="339" y="131" width="73" height="58"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Highest Score: 000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pkl-ug-WdH">
+                                <rect key="frame" x="166" y="213" width="149" height="46"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blk-Mu-egf">
+                                <rect key="frame" x="190" y="113" width="100" height="57"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="6ay-BE-qgs"/>
+                                    <constraint firstAttribute="height" constant="57" id="J0o-fZ-cY3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="StartAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bk5-bN-cJn"/>
+                                    <segue destination="ANa-Md-25Z" kind="show" identifier="@destination" id="fEo-2u-2Aw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Score: 000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBU-io-7tQ">
+                                <rect key="frame" x="182" y="171" width="117" height="46"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HelicopterImage" translatesAutoresizingMaskIntoConstraints="NO" id="Ekc-5h-CBY">
+                                <rect key="frame" x="70" y="131" width="73" height="58"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="43n-Uc-1wI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="111" id="0sz-pu-hlC"/>
+                            <constraint firstItem="43n-Uc-1wI" firstAttribute="centerY" secondItem="Eeh-wy-p3L" secondAttribute="centerY" id="378-b7-cjs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="43n-Uc-1wI" secondAttribute="trailing" constant="48" id="4PJ-Be-etP"/>
+                            <constraint firstItem="43n-Uc-1wI" firstAttribute="leading" secondItem="PBU-io-7tQ" secondAttribute="trailing" constant="40" id="Aml-hg-QkC"/>
+                            <constraint firstItem="Eeh-wy-p3L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="D0V-zf-rZr"/>
+                            <constraint firstItem="blk-Mu-egf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="93" id="GZK-BD-fpC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Pkl-ug-WdH" secondAttribute="bottom" constant="61" id="MkR-aH-ecR"/>
+                            <constraint firstItem="Ekc-5h-CBY" firstAttribute="top" secondItem="43n-Uc-1wI" secondAttribute="top" id="RGu-UY-qds"/>
+                            <constraint firstAttribute="trailing" secondItem="Eeh-wy-p3L" secondAttribute="trailing" id="RPR-DO-bw2"/>
+                            <constraint firstItem="Ekc-5h-CBY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="SDD-n9-bAw"/>
+                            <constraint firstItem="Eeh-wy-p3L" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Tb2-y3-rAq"/>
+                            <constraint firstItem="blk-Mu-egf" firstAttribute="centerX" secondItem="Eeh-wy-p3L" secondAttribute="centerX" id="UlI-tI-Jye"/>
+                            <constraint firstItem="Eeh-wy-p3L" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WUq-fH-Mxb"/>
+                            <constraint firstItem="43n-Uc-1wI" firstAttribute="leading" secondItem="blk-Mu-egf" secondAttribute="trailing" constant="49" id="ZUL-ie-epy"/>
+                            <constraint firstItem="PBU-io-7tQ" firstAttribute="top" secondItem="blk-Mu-egf" secondAttribute="bottom" constant="1" id="dKV-Vg-0a3"/>
+                            <constraint firstItem="PBU-io-7tQ" firstAttribute="leading" secondItem="Ekc-5h-CBY" secondAttribute="trailing" constant="39" id="lZz-sf-dll"/>
+                            <constraint firstItem="Pkl-ug-WdH" firstAttribute="centerX" secondItem="PBU-io-7tQ" secondAttribute="centerX" id="mC6-JL-gJF"/>
+                            <constraint firstItem="blk-Mu-egf" firstAttribute="centerX" secondItem="PBU-io-7tQ" secondAttribute="centerX" id="mOT-fJ-Nza"/>
+                            <constraint firstItem="Pkl-ug-WdH" firstAttribute="top" secondItem="blk-Mu-egf" secondAttribute="bottom" constant="43" id="vq1-hQ-f8u"/>
+                            <constraint firstItem="Ekc-5h-CBY" firstAttribute="bottom" secondItem="43n-Uc-1wI" secondAttribute="bottom" id="vz9-M5-oHT"/>
+                        </constraints>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="Heli2" destination="43n-Uc-1wI" id="qnp-a4-GgT"/>
+                        <outlet property="ScoreLabel" destination="PBU-io-7tQ" id="9nb-vJ-hrr"/>
+                        <outlet property="StartButton" destination="blk-Mu-egf" id="C4U-DR-0Vv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="380" y="337"/>
+        </scene>
+        <!--Play View-->
+        <scene sceneID="amX-He-dp3">
+            <objects>
+                <viewController storyboardIdentifier="playview" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ANa-Md-25Z" customClass="PlayView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IjU-pH-kEW"/>
+                        <viewControllerLayoutGuide type="bottom" id="OI3-3A-Ub7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8cY-g7-Yg1">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="mFh-Tc-rmd">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HelicopterPlay" translatesAutoresizingMaskIntoConstraints="NO" id="yhV-1J-lfu">
+                                <rect key="frame" x="79" y="145" width="28" height="22"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="28" id="sh8-sv-6UP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yhV-1J-lfu" firstAttribute="top" secondItem="IjU-pH-kEW" secondAttribute="bottom" constant="125" id="Cwn-Rc-Cfa"/>
+                            <constraint firstItem="mFh-Tc-rmd" firstAttribute="leading" secondItem="8cY-g7-Yg1" secondAttribute="leading" id="SnL-II-aXz"/>
+                            <constraint firstItem="yhV-1J-lfu" firstAttribute="centerY" secondItem="mFh-Tc-rmd" secondAttribute="centerY" constant="-4" id="Sof-xy-Krb"/>
+                            <constraint firstItem="yhV-1J-lfu" firstAttribute="leading" secondItem="8cY-g7-Yg1" secondAttribute="leadingMargin" constant="59" id="apR-vP-dNG"/>
+                            <constraint firstItem="mFh-Tc-rmd" firstAttribute="top" secondItem="8cY-g7-Yg1" secondAttribute="top" id="hGK-bW-OQx"/>
+                            <constraint firstAttribute="trailing" secondItem="mFh-Tc-rmd" secondAttribute="trailing" id="pTV-wf-7E9"/>
+                            <constraint firstItem="mFh-Tc-rmd" firstAttribute="bottom" secondItem="OI3-3A-Ub7" secondAttribute="top" id="qd9-XI-3GK"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="Helicopter" destination="yhV-1J-lfu" id="FpP-qT-d5C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wgw-Rg-aCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="337"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BackgroundImage" width="488" height="373"/>
+        <image name="HelicopterImage" width="503" height="290"/>
+        <image name="HelicopterPlay" width="960" height="720"/>
+    </resources>
 </document>

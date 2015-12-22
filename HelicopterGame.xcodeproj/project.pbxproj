@@ -14,6 +14,7 @@
 		56DE272E1C28AE2000BC6C1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56DE272D1C28AE2000BC6C1D /* Assets.xcassets */; };
 		56DE27311C28AE2000BC6C1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56DE272F1C28AE2000BC6C1D /* LaunchScreen.storyboard */; };
 		56DE273C1C28AE2100BC6C1D /* HelicopterGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE273B1C28AE2100BC6C1D /* HelicopterGameTests.m */; };
+		56DE27481C28BEFB00BC6C1D /* PlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE27471C28BEFB00BC6C1D /* PlayView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +38,11 @@
 		56DE272D1C28AE2000BC6C1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56DE27301C28AE2000BC6C1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56DE27321C28AE2000BC6C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		56DE27371C28AE2100BC6C1D /* HelicopterGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelicopterGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56DE27371C28AE2100BC6C1D /* HelicopterGame.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelicopterGame.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DE273B1C28AE2100BC6C1D /* HelicopterGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelicopterGameTests.m; sourceTree = "<group>"; };
 		56DE273D1C28AE2100BC6C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56DE27471C28BEFB00BC6C1D /* PlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayView.m; sourceTree = "<group>"; };
+		56DE27491C28BF5100BC6C1D /* PlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				56DE271E1C28AE2000BC6C1D /* HelicopterGame.app */,
-				56DE27371C28AE2100BC6C1D /* HelicopterGameTests.xctest */,
+				56DE27371C28AE2100BC6C1D /* HelicopterGame.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,11 +84,14 @@
 		56DE27201C28AE2000BC6C1D /* HelicopterGame */ = {
 			isa = PBXGroup;
 			children = (
+				56DE27221C28AE2000BC6C1D /* main.m */,
 				56DE27241C28AE2000BC6C1D /* AppDelegate.h */,
 				56DE27251C28AE2000BC6C1D /* AppDelegate.m */,
 				56DE27271C28AE2000BC6C1D /* ViewController.h */,
 				56DE27281C28AE2000BC6C1D /* ViewController.m */,
 				56DE272A1C28AE2000BC6C1D /* Main.storyboard */,
+				56DE27491C28BF5100BC6C1D /* PlayView.h */,
+				56DE27471C28BEFB00BC6C1D /* PlayView.m */,
 				56DE272D1C28AE2000BC6C1D /* Assets.xcassets */,
 				56DE272F1C28AE2000BC6C1D /* LaunchScreen.storyboard */,
 				56DE27321C28AE2000BC6C1D /* Info.plist */,
@@ -97,7 +103,6 @@
 		56DE27211C28AE2000BC6C1D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				56DE27221C28AE2000BC6C1D /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -146,7 +151,7 @@
 			);
 			name = HelicopterGameTests;
 			productName = HelicopterGameTests;
-			productReference = 56DE27371C28AE2100BC6C1D /* HelicopterGameTests.xctest */;
+			productReference = 56DE27371C28AE2100BC6C1D /* HelicopterGame.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -215,6 +220,7 @@
 			files = (
 				56DE27291C28AE2000BC6C1D /* ViewController.m in Sources */,
 				56DE27261C28AE2000BC6C1D /* AppDelegate.m in Sources */,
+				56DE27481C28BEFB00BC6C1D /* PlayView.m in Sources */,
 				56DE27231C28AE2000BC6C1D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,7 +352,7 @@
 				INFOPLIST_FILE = HelicopterGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = A.HelicopterGame;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HelicopterGame;
 			};
 			name = Debug;
 		};
@@ -357,7 +363,7 @@
 				INFOPLIST_FILE = HelicopterGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = A.HelicopterGame;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HelicopterGame;
 			};
 			name = Release;
 		};
@@ -368,7 +374,7 @@
 				INFOPLIST_FILE = HelicopterGameTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = A.HelicopterGameTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HelicopterGame;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelicopterGame.app/HelicopterGame";
 			};
 			name = Debug;
@@ -380,7 +386,7 @@
 				INFOPLIST_FILE = HelicopterGameTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = A.HelicopterGameTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HelicopterGame;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelicopterGame.app/HelicopterGame";
 			};
 			name = Release;
@@ -404,6 +410,7 @@
 				56DE27421C28AE2100BC6C1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56DE27431C28AE2100BC6C1D /* Build configuration list for PBXNativeTarget "HelicopterGameTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +419,7 @@
 				56DE27451C28AE2100BC6C1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
