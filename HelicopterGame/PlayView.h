@@ -15,8 +15,19 @@
 int Y;
 // Start the game
 BOOL Start;
+// End Game
+BOOL End;
 // Background moving speed
 int BackSpeed;
+// Scores
+int Score;
+// Highest Score
+int HighScore;
+
+// declare screen variables
+CGRect screenRect;
+CGFloat screenWidth;
+CGFloat screenHeight;
 
 @interface PlayView : UIViewController
 {
@@ -24,6 +35,8 @@ int BackSpeed;
     // Mark: Properties
     // duration
     NSTimer *timer;
+    NSTimer *Scorer;
+    
     // ui image views
     __weak IBOutlet UIImageView *Helicopter;
     // obstacle views
@@ -46,10 +59,23 @@ int BackSpeed;
     __weak IBOutlet UIImageView *Bottom6;
     __weak IBOutlet UIImageView *Bottom7;
     
+    // Game End labels
+    __weak IBOutlet UILabel *GameOverLabel;
+    
 }
 
+// -------- functions ----------- //
 // function when move the helicopter
 -(void)HeliMove;
+// Scoring
+-(void)Scoring;
+// function when collied
+-(void)Collision;
+// function after collied (End the game)
+-(void)EndGame;
+
+// ------ add Scores label -------- //
+@property(nonatomic, retain) UILabel *ScoreLabel;
 
 @end
 

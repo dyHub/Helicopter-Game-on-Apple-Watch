@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+int HighestScore;
 
 @interface ViewController : UIViewController
 {
@@ -17,14 +18,8 @@
     
     __weak IBOutlet UILabel *ScoreLabel;
     
-    __weak IBOutlet UIImageView *Heli1;
-    
-    __weak IBOutlet UIImageView *Heli2;
-    
     // NSTimer *timer;
     
 }
-
-
 @end
 
