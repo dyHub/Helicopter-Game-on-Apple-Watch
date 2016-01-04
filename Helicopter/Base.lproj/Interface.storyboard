@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <imageView width="76" height="37" alignment="center" image="HelicopterImage" id="hSs-T8-MWT"/>
+                        <button width="101" height="42" alignment="center" verticalAlignment="center" title="Start" id="Yhq-sA-EsT">
+                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="30"/>
+                            <connections>
+                                <segue destination="E4s-63-TOi" kind="push" id="cEe-xW-F2e"/>
+                            </connections>
+                        </button>
+                        <label height="17" alignment="center" verticalAlignment="bottom" text="Highest Score:" textAlignment="left" id="gjw-tz-WIH"/>
+                        <label width="39" height="23" alignment="center" verticalAlignment="bottom" text="000" textAlignment="center" id="QfA-vF-z3o"/>
+                    </items>
+                    <connections>
+                        <outlet property="StartButton" destination="Yhq-sA-EsT" id="V5N-Lm-Q3G"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--playview-->
+        <scene sceneID="d4e-ly-K4b">
+            <objects>
+                <controllerPlaceholder referencedIdentifier="playview" id="E4s-63-TOi"/>
+            </objects>
+            <point key="canvasLocation" x="468.5" y="335"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="XAc-wG-Idq">
+            <objects>
+                <controller id="8Yb-8D-BA4">
+                    <items>
+                        <imageView alignment="left" id="Go5-YU-xno"/>
+                        <imageView alignment="left" id="X6k-Dy-9jr"/>
+                        <imageView width="33" height="37" alignment="left" id="DhD-8y-px6"/>
+                        <imageView alignment="left" id="mDP-Db-CC8"/>
+                        <imageView alignment="left" id="d2A-e7-WDb"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="600" y="343"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

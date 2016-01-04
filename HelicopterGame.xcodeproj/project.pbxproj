@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		565FB0331C3AFB340041D855 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565FB0311C3AFB340041D855 /* Interface.storyboard */; };
+		565FB0351C3AFB340041D855 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 565FB0341C3AFB340041D855 /* Assets.xcassets */; };
+		565FB03C1C3AFB340041D855 /* Helicopter Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 565FB03B1C3AFB340041D855 /* Helicopter Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		565FB0441C3AFB340041D855 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565FB0431C3AFB340041D855 /* InterfaceController.m */; };
+		565FB0471C3AFB340041D855 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 565FB0461C3AFB340041D855 /* ExtensionDelegate.m */; };
+		565FB04A1C3AFB340041D855 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565FB0491C3AFB340041D855 /* NotificationController.m */; };
+		565FB04C1C3AFB340041D855 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 565FB04B1C3AFB340041D855 /* Assets.xcassets */; };
+		565FB0501C3AFB340041D855 /* Helicopter.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 565FB02F1C3AFB340041D855 /* Helicopter.app */; };
 		56DE27231C28AE2000BC6C1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE27221C28AE2000BC6C1D /* main.m */; };
 		56DE27261C28AE2000BC6C1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE27251C28AE2000BC6C1D /* AppDelegate.m */; };
 		56DE27291C28AE2000BC6C1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE27281C28AE2000BC6C1D /* ViewController.m */; };
@@ -18,6 +26,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		565FB03D1C3AFB340041D855 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56DE27161C28AE2000BC6C1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 565FB03A1C3AFB340041D855;
+			remoteInfo = "Helicopter Extension";
+		};
+		565FB04E1C3AFB340041D855 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56DE27161C28AE2000BC6C1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 565FB02E1C3AFB340041D855;
+			remoteInfo = Helicopter;
+		};
 		56DE27381C28AE2100BC6C1D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 56DE27161C28AE2000BC6C1D /* Project object */;
@@ -27,7 +49,46 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		565FB0561C3AFB340041D855 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				565FB03C1C3AFB340041D855 /* Helicopter Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		565FB0581C3AFB340041D855 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				565FB0501C3AFB340041D855 /* Helicopter.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		565FB02F1C3AFB340041D855 /* Helicopter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Helicopter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		565FB0321C3AFB340041D855 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		565FB0341C3AFB340041D855 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		565FB0361C3AFB340041D855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		565FB03B1C3AFB340041D855 /* Helicopter Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Helicopter Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		565FB0411C3AFB340041D855 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		565FB0421C3AFB340041D855 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		565FB0431C3AFB340041D855 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		565FB0451C3AFB340041D855 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		565FB0461C3AFB340041D855 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		565FB0481C3AFB340041D855 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		565FB0491C3AFB340041D855 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		565FB04B1C3AFB340041D855 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		565FB04D1C3AFB340041D855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56DE271E1C28AE2000BC6C1D /* HelicopterGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelicopterGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DE27221C28AE2000BC6C1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56DE27241C28AE2000BC6C1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -46,6 +107,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		565FB0381C3AFB340041D855 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56DE271B1C28AE2000BC6C1D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,11 +131,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		565FB0301C3AFB340041D855 /* Helicopter */ = {
+			isa = PBXGroup;
+			children = (
+				565FB0311C3AFB340041D855 /* Interface.storyboard */,
+				565FB0341C3AFB340041D855 /* Assets.xcassets */,
+				565FB0361C3AFB340041D855 /* Info.plist */,
+			);
+			path = Helicopter;
+			sourceTree = "<group>";
+		};
+		565FB03F1C3AFB340041D855 /* Helicopter Extension */ = {
+			isa = PBXGroup;
+			children = (
+				565FB0421C3AFB340041D855 /* InterfaceController.h */,
+				565FB0431C3AFB340041D855 /* InterfaceController.m */,
+				565FB0451C3AFB340041D855 /* ExtensionDelegate.h */,
+				565FB0461C3AFB340041D855 /* ExtensionDelegate.m */,
+				565FB0481C3AFB340041D855 /* NotificationController.h */,
+				565FB0491C3AFB340041D855 /* NotificationController.m */,
+				565FB04B1C3AFB340041D855 /* Assets.xcassets */,
+				565FB04D1C3AFB340041D855 /* Info.plist */,
+				565FB0401C3AFB340041D855 /* Supporting Files */,
+			);
+			path = "Helicopter Extension";
+			sourceTree = "<group>";
+		};
+		565FB0401C3AFB340041D855 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				565FB0411C3AFB340041D855 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		56DE27151C28AE2000BC6C1D = {
 			isa = PBXGroup;
 			children = (
 				56DE27201C28AE2000BC6C1D /* HelicopterGame */,
 				56DE273A1C28AE2100BC6C1D /* HelicopterGameTests */,
+				565FB0301C3AFB340041D855 /* Helicopter */,
+				565FB03F1C3AFB340041D855 /* Helicopter Extension */,
 				56DE271F1C28AE2000BC6C1D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +181,8 @@
 			children = (
 				56DE271E1C28AE2000BC6C1D /* HelicopterGame.app */,
 				56DE27371C28AE2100BC6C1D /* HelicopterGame.xctest */,
+				565FB02F1C3AFB340041D855 /* Helicopter.app */,
+				565FB03B1C3AFB340041D855 /* Helicopter Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +225,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		565FB02E1C3AFB340041D855 /* Helicopter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 565FB0571C3AFB340041D855 /* Build configuration list for PBXNativeTarget "Helicopter" */;
+			buildPhases = (
+				565FB02D1C3AFB340041D855 /* Resources */,
+				565FB0561C3AFB340041D855 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				565FB03E1C3AFB340041D855 /* PBXTargetDependency */,
+			);
+			name = Helicopter;
+			productName = Helicopter;
+			productReference = 565FB02F1C3AFB340041D855 /* Helicopter.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		565FB03A1C3AFB340041D855 /* Helicopter Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 565FB0551C3AFB340041D855 /* Build configuration list for PBXNativeTarget "Helicopter Extension" */;
+			buildPhases = (
+				565FB0371C3AFB340041D855 /* Sources */,
+				565FB0381C3AFB340041D855 /* Frameworks */,
+				565FB0391C3AFB340041D855 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Helicopter Extension";
+			productName = "Helicopter Extension";
+			productReference = 565FB03B1C3AFB340041D855 /* Helicopter Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		56DE271D1C28AE2000BC6C1D /* HelicopterGame */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56DE27401C28AE2100BC6C1D /* Build configuration list for PBXNativeTarget "HelicopterGame" */;
@@ -126,10 +266,12 @@
 				56DE271A1C28AE2000BC6C1D /* Sources */,
 				56DE271B1C28AE2000BC6C1D /* Frameworks */,
 				56DE271C1C28AE2000BC6C1D /* Resources */,
+				565FB0581C3AFB340041D855 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				565FB04F1C3AFB340041D855 /* PBXTargetDependency */,
 			);
 			name = HelicopterGame;
 			productName = HelicopterGame;
@@ -163,6 +305,14 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Yuhan Dai";
 				TargetAttributes = {
+					565FB02E1C3AFB340041D855 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 282STFRV99;
+					};
+					565FB03A1C3AFB340041D855 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 282STFRV99;
+					};
 					56DE271D1C28AE2000BC6C1D = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = 282STFRV99;
@@ -189,11 +339,30 @@
 			targets = (
 				56DE271D1C28AE2000BC6C1D /* HelicopterGame */,
 				56DE27361C28AE2100BC6C1D /* HelicopterGameTests */,
+				565FB02E1C3AFB340041D855 /* Helicopter */,
+				565FB03A1C3AFB340041D855 /* Helicopter Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		565FB02D1C3AFB340041D855 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				565FB0351C3AFB340041D855 /* Assets.xcassets in Resources */,
+				565FB0331C3AFB340041D855 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		565FB0391C3AFB340041D855 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				565FB04C1C3AFB340041D855 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56DE271C1C28AE2000BC6C1D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,6 +383,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		565FB0371C3AFB340041D855 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				565FB0471C3AFB340041D855 /* ExtensionDelegate.m in Sources */,
+				565FB0441C3AFB340041D855 /* InterfaceController.m in Sources */,
+				565FB04A1C3AFB340041D855 /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56DE271A1C28AE2000BC6C1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -236,6 +415,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		565FB03E1C3AFB340041D855 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 565FB03A1C3AFB340041D855 /* Helicopter Extension */;
+			targetProxy = 565FB03D1C3AFB340041D855 /* PBXContainerItemProxy */;
+		};
+		565FB04F1C3AFB340041D855 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 565FB02E1C3AFB340041D855 /* Helicopter */;
+			targetProxy = 565FB04E1C3AFB340041D855 /* PBXContainerItemProxy */;
+		};
 		56DE27391C28AE2100BC6C1D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 56DE271D1C28AE2000BC6C1D /* HelicopterGame */;
@@ -244,6 +433,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		565FB0311C3AFB340041D855 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				565FB0321C3AFB340041D855 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		56DE272A1C28AE2000BC6C1D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -263,6 +460,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		565FB0511C3AFB340041D855 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Helicopter_Extension;
+				INFOPLIST_FILE = Helicopter/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = A.HelicopterGame.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		565FB0521C3AFB340041D855 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Helicopter_Extension;
+				INFOPLIST_FILE = Helicopter/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = A.HelicopterGame.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		565FB0531C3AFB340041D855 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Helicopter Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = A.HelicopterGame.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		565FB0541C3AFB340041D855 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Helicopter Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = A.HelicopterGame.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 		56DE273E1C28AE2100BC6C1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -394,6 +649,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		565FB0551C3AFB340041D855 /* Build configuration list for PBXNativeTarget "Helicopter Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				565FB0531C3AFB340041D855 /* Debug */,
+				565FB0541C3AFB340041D855 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		565FB0571C3AFB340041D855 /* Build configuration list for PBXNativeTarget "Helicopter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				565FB0511C3AFB340041D855 /* Debug */,
+				565FB0521C3AFB340041D855 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		56DE27191C28AE2000BC6C1D /* Build configuration list for PBXProject "HelicopterGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
